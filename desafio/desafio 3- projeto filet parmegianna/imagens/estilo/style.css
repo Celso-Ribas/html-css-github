@@ -36,7 +36,7 @@ header a, footer a {
 
 
 
-    color:rgb(2, 2, 48);
+    color:rgb(66, 66, 112);
     text-decoration: none;
     font-weight: bolder;
 }
@@ -48,19 +48,30 @@ header a :hover , footer a:hover {
 }
 header {
 
-    background-color: rgb(2, 45, 51);
+    background-image: url(../img01.jpg);
+    background-position: inherit;
+    background-size: cover;
     color: white;
     text-align: center;
 }
 header > h1 {
+
+    color: rgb(3, 53, 1);
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 3em;
+    font-size: 5em;
+    text-shadow: 3px 3px 0px black
 }
 
 header > p {
     padding-bottom: 50px;
+    color: rgb(3, 53, 1);
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    
+    
 }
 
 section {
