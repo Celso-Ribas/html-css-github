@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
 
+    
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -12,6 +14,19 @@
         }
         h2,h1 {
             text-align: center;
+        }
+
+        /* Efeito zebrado aplicado de par em par */
+        tbody > tr:nth-child(odd)  
+        {
+            background-color: brown;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aquamarine;
         }
 
         table {
@@ -56,10 +71,14 @@
         
 -->
 <table>
+
+    
+        <caption>Exemplo 1 do exercicío</caption>
+    
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
 
         </tr>
     </thead>
@@ -97,11 +116,10 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>131.959.686</strong></td>
         </tr>
     </tfoot>
 </table>
     <h1>O Exercicio usa o Exemplo até o estado de Pernambuco </h1>
-</body>
-</html>
+</body
