@@ -8,11 +8,41 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        h2,h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 500px;   
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td.num {
+            text-align: right;
+            background-color: aqua;
+        }
+
+        thead {
+            background-color: aqua;
+            color: brown;
+        }
+        tfoot {
+            background-color: aqua;
         }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
+    <h2>Esse exercicio está sendo feito baseado no <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Wikipedia População do Brasil</a>.
+    </h2>
+
+
 
     <!--HIERARQUIA DE TABELAS GRANDES
 
@@ -36,10 +66,42 @@
     <tbody>
         <tr> 
             <td>São Paulo</td>
-            <td>49.919.049</td>
+            <td class="num">49 919 049</td>
+
         </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio De Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14 850 513</td>
+        </tr>
+        <tr>
+            <td>Parana</td>
+            <td class="num">11 824 665</td>
+        </tr>
+        <tr>
+            <td>Rio Grande Do Sul</td>
+            <td class="num">11 229 915</td>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+        </tr>
+        
     </tbody>
+    <tfoot>
+        <tr>
+            <th>Total de habitantes</th>
+            <td class="num"><strong>131.959.686</strong></td>
+        </tr>
+    </tfoot>
 </table>
-    
+    <h1>O Exercicio usa o Exemplo até o estado de Pernambuco </h1>
 </body>
 </html>
