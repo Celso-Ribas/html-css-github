@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+
+    <!-- Nesta aula, são adicionado no formulario os seguintes atributos:
+
+     1-required= Só deixa o usuario seguir com o cadastro se adicionar login e senha.
+
+     2-minlength e maxlenghth= min. e max de numero ou letras para o cadastro.
+
+     3-input reset= Limpar os dados do cadastro.
+
+     4-size= tamanho da caixa. Quant. de letras que vai mostrar na caixa.
+
+     5-Placeholder= mostra dentro da coixa uma informação antes do cadastro acontecer
+     
+    -->
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off"></form>
+
+    <p> <label for="iusu"></label>Usuário</p>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="12" placeholder="Nome">
+
+        <p>
+            <label for="isob"></label>Sobrenome
+        </p>
+        <input type="text" name="sob" id="isob" required minlength="12" maxlength="15" size="12" placeholder="Sobrenome">
+
+    <p> <label for="isen"></label>Senha</p>
+        <input type="password" name="sen" id="isen" required minlength="4" maxlength="10" size="12" placeholder="Senha">
+
+   <p> <input type="submit" value="Enviar"></p>
+       <input type="reset" value="Limpar">
+
+    
+</body>
+</html>
